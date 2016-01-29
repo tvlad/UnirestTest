@@ -1,42 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5205" started-at="2016-01-06T16:45:56Z" finished-at="2016-01-06T16:46:02Z">
+  <suite name="Default suite" duration-ms="2421" started-at="2016-01-12T16:23:04Z" finished-at="2016-01-12T16:23:07Z">
     <groups>
-      <group name="spletter">
-        <method signature="SpletterTests._01_Login()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="_01_Login" class="Unirest.UnirestTest.SpletterTests"/>
-        <method signature="SpletterTests._02_userCurrent()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="_02_userCurrent" class="Unirest.UnirestTest.SpletterTests"/>
-        <method signature="SpletterTests._03_suppliers()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="_03_suppliers" class="Unirest.UnirestTest.SpletterTests"/>
-      </group> <!-- spletter -->
     </groups>
-    <test name="Default test" duration-ms="5205" started-at="2016-01-06T16:45:56Z" finished-at="2016-01-06T16:46:02Z">
-      <class name="Unirest.UnirestTest.SpletterTests">
-        <test-method status="PASS" signature="setDefault()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="setDefault" is-config="true" duration-ms="369" started-at="2016-01-06T18:45:57Z" finished-at="2016-01-06T18:45:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDefault -->
-        <test-method status="PASS" signature="_01_Login()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="_01_Login" duration-ms="3024" started-at="2016-01-06T18:45:57Z" finished-at="2016-01-06T18:46:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- _01_Login -->
-        <test-method status="PASS" signature="setDefault()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="setDefault" is-config="true" duration-ms="16" started-at="2016-01-06T18:46:00Z" finished-at="2016-01-06T18:46:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDefault -->
-        <test-method status="PASS" signature="_02_userCurrent()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="_02_userCurrent" duration-ms="1344" started-at="2016-01-06T18:46:00Z" finished-at="2016-01-06T18:46:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- _02_userCurrent -->
-        <test-method status="PASS" signature="setDefault()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="setDefault" is-config="true" duration-ms="2" started-at="2016-01-06T18:46:01Z" finished-at="2016-01-06T18:46:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setDefault -->
-        <test-method status="FAIL" signature="_03_suppliers()[pri:0, instance:Unirest.UnirestTest.SpletterTests@5474c6c]" name="_03_suppliers" duration-ms="425" started-at="2016-01-06T18:46:01Z" finished-at="2016-01-06T18:46:02Z">
-          <exception class="java.lang.NullPointerException">
+    <test name="Default test" duration-ms="2421" started-at="2016-01-12T16:23:04Z" finished-at="2016-01-12T16:23:07Z">
+      <class name="Unirest.UnirestTest.Tests">
+        <test-method status="FAIL" signature="_03_Test()[pri:0, instance:Unirest.UnirestTest.Tests@326de728]" name="_03_Test" duration-ms="2373" started-at="2016-01-12T18:23:04Z" finished-at="2016-01-12T18:23:07Z">
+          <exception class="com.sun.jersey.api.client.UniformInterfaceException">
+            <message>
+              <![CDATA[GET https://my.15five.com/mobile/login returned a response status of 405 Method Not Allowed]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at Unirest.UnirestTest.SpletterTests._03_suppliers(SpletterTests.java:69)
+              <![CDATA[com.sun.jersey.api.client.UniformInterfaceException: GET https://my.15five.com/mobile/login returned a response status of 405 Method Not Allowed
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:676)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:503)
+	at Unirest.UnirestTest.Tests._03_Test(Tests.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,11 +44,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- com.sun.jersey.api.client.UniformInterfaceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- _03_suppliers -->
-      </class> <!-- Unirest.UnirestTest.SpletterTests -->
+        </test-method> <!-- _03_Test -->
+      </class> <!-- Unirest.UnirestTest.Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
